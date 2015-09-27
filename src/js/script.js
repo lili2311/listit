@@ -1,1 +1,1 @@
-function initialize_map(a,b){var c=new google.maps.LatLng(a,b),d={zoom:9,center:c};map=new google.maps.Map(document.getElementById("map-canvas"),d),new google.maps.Marker({position:c,map:map,title:"Listit"})}var map;
+function initialize_map(a,b){var c=new google.maps.LatLng(a,b),d={zoom:10,center:c};map=new google.maps.Map(document.getElementById("map-canvas"),d),new google.maps.Marker({position:c,map:map,title:"Listit"})}var map;
