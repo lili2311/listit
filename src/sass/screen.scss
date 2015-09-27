@@ -1,0 +1,504 @@
+@import "partials/base";
+$link-color: $white;
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1.3em;
+}
+
+body, html, div {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: $base-font-name;
+  font-weight: $base-font-light;
+  font-size: 100%;
+  line-height: $line-height;
+  letter-spacing: 0.01em;
+  color: $black;
+  line-height: 1.6em;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.content {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  max-width: 40em;
+  margin: 0 auto;
+}
+
+.img-container {
+  width: 60%;
+  margin: 0 auto;
+  padding-bottom: $padding-margin-value;
+}
+
+.icon-container {
+  width: $icon-size;
+  height: $icon-size;
+  margin: 0 auto; 
+  flex: 1;
+  width: auto;
+  text-align: right;
+  img {
+    padding-right: $padding-margin-value;
+  }
+}
+
+#map-canvas {
+  width:100%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: $grey;
+}
+
+.bg {
+  background-image: url('../img/bg.jpg');
+  background-size: cover;
+  width:100%;
+  height:50em;
+  padding:3em;
+  h1 {
+    font-size: 3em;
+    margin-top: 3em auto;
+    padding: 0.5em;
+    vertical-align: middle;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(0,0,0,0.35);
+  }
+}
+
+.col { 
+  vertical-align: top;
+  text-align: center;
+  margin:0 auto;
+  padding-top: $padding-margin-value;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width:100%;
+  margin-bottom: $padding-margin-value auto; 
+  flex-grow: 1;
+  h3 {
+    padding-bottom: 0;
+    flex: 2;
+    text-align: left;
+    flex-wrap: wrap;
+  }
+}
+
+.feedback {
+  padding-top: $padding-margin-value*2;
+  padding-bottom: 0;
+}
+
+.circle {
+  list-style: circle;
+  margin: 0;
+}
+
+.contact {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%; 
+  display: flex;
+  flex-direction: column;
+}
+
+.van-img-container {
+  margin: $padding-margin-value;
+  padding: $padding-margin-value;
+  display: inline-block;
+  width: auto;
+  border: .5em solid $darker-grey;
+}
+
+#logo {
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+a {
+  color: $link-color;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.casa {
+  h1 {
+    margin-bottom: 0;
+    text-align: left;
+  }
+  h3 {
+    text-align: left;
+    color: $darker-grey; 
+    margin-bottom:1em;
+    padding: 0;
+  }
+  h2 {
+    margin-top: $padding-margin-value;
+  }
+  p {
+    text-align: left;
+    margin: 1em 0;
+    padding: 0;
+    color: $black;
+  }
+  form {
+    padding:0;
+    max-width: 15em;
+    margin: 0 .5em;
+  }
+  .col {
+    width:48%;
+    display: inline-block;
+  }
+
+
+}
+
+
+header {
+  width: 100%;
+  background-color: $pale-blue;
+  background-image: radial-gradient(circle, $pale-blue, $accent-color);
+  margin: 0 auto;
+  h1, h2 {
+    margin: 0;
+    padding: $padding-margin-value/2 0;
+    font-family: "Mohave";
+    text-align: center;
+    display: block;
+    font-weight: bold;
+    line-height: 1.3em;
+    color: $white;
+  }
+  h1 {
+    font-size: 3em;
+    padding: .5em 0;
+    a {
+      text-shadow: 0.1em 0.03em #568B9A;
+      color: $white;
+      &:visited {
+      color: $white;
+      }
+    }
+  }
+  .img-container{
+    padding: 0;
+  }
+  h2 {
+    font-size: $base-font-size;
+    color: $paler-blue;
+    text-shadow: 1px 0 1px  $accent-color;
+    padding-bottom: $padding-margin-value;
+  }
+  #logo {
+    margin: 0 auto;
+    width: 15em;
+    display: block;
+  }
+}
+
+nav {
+  width: 100%;
+  margin: 0 auto;
+  background-color: $black;
+  padding: 0 $padding-margin-value;
+  ul {
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    max-width: 40em;
+    flex-wrap: wrap;
+    li {
+      flex-grow: 1;
+      padding: $padding-margin-value/2 0;
+      margin: 0 auto;
+      text-align: center;
+      font-size: $base-font-size;
+    }
+  }
+  a {
+    color: $link-color;
+    &:hover {
+      color: $white;
+    }
+    &:visited {
+      color: $link-color;
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+  &:visited {
+      color: $link-color;
+  }
+}
+
+.more {
+  display: none;
+}
+
+ul {
+  list-style: none;
+  margin: $padding-margin-value;
+  div {
+    display: inline-block;
+  }
+  .icon-container {
+    display: inline-block;
+  }
+  li {
+    display: block;
+    margin: $padding-margin-value;
+    p {
+      display: inline-block;
+      padding: $padding-margin-value 0;
+      flex:1;
+    }
+  }
+}
+.text-container {
+  padding: $padding-margin-value 0;
+}
+
+.box {
+  margin: $padding-margin-value 0;
+  width: 100%;
+  min-height: 15em;
+  border-bottom-width: 0;
+  box-shadow: .5em .5em 0px rgba(0,0,0,.1);
+  background-color: $pale-blue;
+  .icon-container {
+    display: flex;
+    width: 4em;
+    height:4em;
+    img {
+      padding: 0;
+    }
+  }
+  h3 {
+    width: 100%;
+    background-color: #3c3c3c;
+    padding: 1em;
+    color: $pale-blue;
+    font-family: "Mohave";
+    text-align: center;
+    line-height: 1.3em;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    li {
+    flex:1;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin:0;
+      p {
+        text-align:left;
+      }
+    }
+  }
+  p {
+    flex:2;
+  }
+}
+
+section {
+  /*margin: $padding-margin-value auto;*/
+  padding: $padding-margin-value*2 $padding-margin-value;
+  min-height: 5em;
+  width: 100%;
+  h3 {
+    text-align: center;
+    padding: $padding-margin-value 0;
+  }
+  p {
+    padding: $padding-margin-value/4;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.3em;
+    font-size: 1.1em;
+  }
+  a {
+    &:visited {
+      color: $link-color;
+    }
+  }
+  &:nth-child(odd) {
+    background-color: $grey-white;
+  }
+}
+
+form {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 30em;
+  padding: $padding-margin-value;
+}
+input[type="date"]:before {
+    content: attr(placeholder) !important;
+    color: #aaa;
+    margin-right: 0.5em;
+  }
+  input[type="date"]:focus:before,
+  input[type="date"]:valid:before {
+    content: "";
+  }
+  
+input[type=date] {
+  display: block;
+  width: 100%;
+  padding: $padding-margin-value/2;
+  margin: 0 auto $padding-margin-value/2 auto;
+  border: 1px solid $grey;
+  color: $black;
+
+}
+
+
+input[type=text] {
+  display: block;
+  width: 100%;
+  padding: $padding-margin-value/2;
+  margin: 0 auto $padding-margin-value auto;
+  border: 1px solid $grey;
+  color: $black;
+}
+
+input[type=email] {
+  display: block;
+  padding: $padding-margin-value/2;
+  margin: 0 auto $padding-margin-value auto;
+  width: 100%;
+  border: 1px solid $grey;
+  color: $black;
+}
+
+input[type=number] {
+  display: block;
+  padding: $padding-margin-value/2;
+  margin: 0 auto $padding-margin-value auto;
+  width: 100%;
+  border: 1px solid $grey;
+  color: $black;
+}
+input[type=submit] {
+  display: block;
+  padding: $padding-margin-value/2;
+  margin: 0 auto $padding-margin-value auto;
+  width: 100%;
+  border: none;
+  opacity: 0.7;
+  box-shadow: .5em .5em 0px rgba(0,0,0,.1);
+  background-color: $pale-blue;
+  color: $accent-color;
+  font-family: "Mohave";
+  &:hover {
+    opacity:1;  
+  }
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  padding: $padding-margin-value/2;
+  margin: 0 auto $padding-margin-value auto;
+  border: 1px solid $grey;
+  color: $black;
+}
+
+footer {
+  padding: $padding-margin-value*2 $padding-margin-value;
+  background-color: $black;
+  color: $white;
+  p {
+    text-align: center;
+  }
+  a {
+    color: $pale-blue;
+  }
+  nav {
+    width: 100%;
+    padding-top: $padding-margin-value;
+    background-color: $black;
+    li {
+      display: inline-block;
+      width: auto;
+      padding: 0;
+    }
+  }
+}
+
+@media (max-width:500px) {
+  .col {
+    flex-direction: column;
+    h3 {
+      text-align: center;
+    }
+  }
+  .icon-container {
+    img {
+      padding: 0;
+    }
+  }
+  .casa {
+    .col {
+      width:100%;
+      display: block;
+    }
+    form {
+      margin: 0 .5em;
+
+    }
+}
+@media (max-width:300px) {
+  nav {
+    ul {
+      li {
+        width: 100%;
+        padding: $padding-margin-value/2;
+      }
+    }
+  }
+  .box {
+    .icon-container {
+      display: none;
+    }
+    p {
+      padding: $padding-margin-value/2;
+    }
+  }
+
+  }
+
+
+}
